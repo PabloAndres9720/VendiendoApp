@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-color">
+  <img src="/images/icon_menu.svg" alt="menu" class="menu">
+  <div class="container">
+    <div class="container-fluid">
+        <img src="/images/logo1.png" class="logo" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-texto" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">Quienes Somos</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+    {{#if user}}        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inmuebles
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/inmuebles#">Consultar inmuebles</a></li>
+            <li><a class="dropdown-item" href="/inmuebles/add">Adicionar Inmuebles</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/users/logout">Logout</a></li>
+          </ul>
+        </li>
+        {{else}}
+        <li class="nav-item nav">
+          <a href="/users/signin" class="nav-link">Login</a>
+        </li>
+        <li>
+          <a href="/users/signup" class="nav-link">Register</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>

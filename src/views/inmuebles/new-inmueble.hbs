@@ -1,0 +1,41 @@
+<br>
+<br>
+<h3 class="titulo-formulario">Agregar Inmueble</h3>
+<div class="container">
+    <form class="row g-3" action="/inmuebles/new-inmuebles" method="post" enctype="multipart/form-data">
+  <div class="col-md-6">
+    <label for="tipo" class="form-label">Tipo Inmueble</label>
+    <input type="text" name="tipo" class="form-control"  autofocus>
+  </div>
+  <div class="col-md-6">
+    <label for="zona" class="form-label">Zona</label>
+    <input type="text" name="zona" class="form-control">
+  </div>
+  <div class="col-12">
+    <label for="descripcion" class="form-label">Descripción</label>
+    <input type="text" name="descripcion" class="form-control">
+  </div>
+  <div class="col-md-6">
+    <label for="precio" class="form-label">Precio</label>
+    <input type="number" name="precio" class="form-control">
+  </div>
+  <div class="col-md-6">
+    <label for="habitaciones" class="form-label">Habitaciones</label>
+    <input type="number" name="habitaciones" class="form-control">
+  </div>
+
+  <div class="col-md-12 input-group pt-4">
+      <div class="custom-file">
+          <input type="file" name="image" class="custom-file-input" id="inputGroupFile01">
+          <label for="inputGroupFile01" class="custom-file-label">Selecciona Un Archivo</label>
+      </div>
+  </div>
+
+    <button class="btn btn-primary btn-login m-3">
+        Almacenar
+    </button>
+</form>
+</div>
+
+
+

@@ -1,0 +1,30 @@
+<div>
+    <h4 align='center' class="mt-4">LISTADO DE INMUEBLES</h4>
+ <h4 align='center' class="mt-4">TOTAL INMUEBLES {{inmuebles.length}}</h4>
+</div>
+<div class="row ml-4 mt-4">
+    {{#each inmuebles}}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        {{tipo}} <a href="/inmuebles/edit/{{_id}}"><i class="fa fa-pencil-alt lapiz"></i></a>
+                        </h4>
+                        <h4 class="card-title d-flex justify-content-between align-items-center">{{descripcion}}</h4>
+                        <p class="m-0">Zona:{{zona}}</p>
+                        <p class="m-0">Precio:{{precio}}</p>
+                        <p class="bt-0">Habitaciones:{{habitaciones}}</p>
+                        <img src="{{foto}}" class="img-all"  alt="">
+
+                    <p>{{description}}</p>
+                    <form action="/inmuebles/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-login btn-block btn-sm">Delete</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+</div>

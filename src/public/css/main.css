@@ -1,0 +1,152 @@
+:root{
+--white: #FFFFFF;
+--black: #000000;
+--dark: #232830;
+--very-light-pink: #C7C7C7;
+--text-input-field: #F7F7F7;
+--hospital-green: #087E8B;
+--sm: 14px;
+--md: 16px;
+--lg: 18px;
+
+}
+
+body {
+margin: 0;
+font-family: 'Quicksand'    ;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+padding: 0 24px;
+border-bottom: 1px solid var(--very-light-pink);
+}
+.menu{
+display: none;
+}
+
+.logo{
+width: 210px;
+}
+
+.img-casa{
+    width: 100%;
+    height: 225px;
+}
+
+.img-all{
+   width: 100%;
+   height: auto;
+}
+
+.nav-texto a{
+   font-size: 20px;
+   font-weight: var(--lg);
+   color: var(--dark);
+}
+.btn-login{
+   background: #087E8B;
+}
+.navbar-color{
+   background: #ededed;
+}
+.navbar-left ul,
+.navbar-right ul{
+list-style: none;
+padding: 0;
+margin: 0px;
+display: flex;
+align-items: center;
+height: 60px;
+}
+.navbar-left{
+display: flex;
+margin-left: 12px;
+}
+
+
+.navbar-left ul{
+margin-left: 12px;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a{
+text-decoration: none;
+color: var(--very-light-pink);
+border: 1px solid var(--white);
+padding: 8px;
+border-radius: 8px;
+}
+
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+border: 1px solid var(--hospital-green);
+color: var(--hospital-green);
+}
+
+.navbar-email{
+color:var(--very-light-pink);
+font-style: var(--sm);
+margin-right: 12px;
+}
+
+
+.lapiz{
+   color: #087E8B;
+}
+.label{
+   font-size: var(--sm);
+   font-weight: bold;
+   margin-bottom: 4px;
+   float: left;
+}
+
+.titulo-formulario{
+   text-align: center;
+}
+
+.bg-vendiendo{
+    background-color: #912F40;
+}
+
+.btn-login {
+   background-color: #087E8B;
+   border-color: #087E8B;
+   color: var(--text-input-field);
+}
+
+.navbar-nav2 ul{
+   list-style: none;
+   padding: 0;
+   margin: 0px;
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+
+.navbar-nav2{
+   display: flex;
+   margin-left: 12px;
+}
+
+.navbar-nav2 ul li a{
+   text-decoration: none;
+       color: var(--very-light-pink);
+       border: 1px solid var(--white);
+       padding: 8px;
+       border-radius: 8px;
+}
+
+@media(max-with:640px){
+.menu{
+   display: block;
+}
+.navbar-left ul{
+   display: none;
+}
+.navbar-email{
+   display: none;
+}
+}
