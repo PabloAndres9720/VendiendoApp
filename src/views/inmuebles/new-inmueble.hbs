@@ -5,11 +5,24 @@
     <form class="row g-3" action="/inmuebles/new-inmuebles" method="post" enctype="multipart/form-data">
   <div class="col-md-6">
     <label for="tipo" class="form-label">Tipo Inmueble</label>
-    <input type="text" name="tipo" class="form-control"  autofocus>
+    <select name="tipo" class="form-control" aria-label=".form-select-lg example" autofocus> 
+    <option selected>Seleccione el tipo de inmueble</option>
+    <option value="Apartamento">Apartamento</option>
+    <option value="Casa">Casa</option>
+    <option value="Apartaestudio">Apartaestudio</option>
+    <option value="Habitación">Habitación</option>
+    <option value="Edificio">Edificio</option>
+  </select>
   </div>
   <div class="col-md-6">
     <label for="zona" class="form-label">Zona</label>
-    <input type="text" name="zona" class="form-control">
+    <select name="zona" class="form-control" aria-label=".form-select-lg example" autofocus> 
+    <option selected>Seleccione la zona del inmueble</option>
+    <option value="Norte">Norte</option>
+    <option value="Centro">Centro</option>
+    <option value="Sur">Sur</option>
+    <option value="Oriente">Oriente</option>
+  </select>
   </div>
   <div class="col-12">
     <label for="descripcion" class="form-label">Descripción</label>
@@ -17,11 +30,11 @@
   </div>
   <div class="col-md-6">
     <label for="precio" class="form-label">Precio</label>
-    <input type="number" name="precio" class="form-control">
+    <input type="text" name="precio" class="form-control">
   </div>
   <div class="col-md-6">
     <label for="habitaciones" class="form-label">Habitaciones</label>
-    <input type="number" name="habitaciones" class="form-control">
+    <input type="text" name="habitaciones" class="form-control">
   </div>
 
   <div class="col-md-12 input-group pt-4">
@@ -30,7 +43,6 @@
           <label for="inputGroupFile01" class="custom-file-label">Selecciona Un Archivo</label>
       </div>
   </div>
-
     <button class="btn btn-primary btn-login m-3">
         Almacenar
     </button>

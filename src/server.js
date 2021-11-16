@@ -7,6 +7,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 const multer = require('multer');
+
 //Initializacions
 const app = express();
 require('./config/passport');
